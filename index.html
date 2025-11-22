@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista simulada — OGTIC + ALFA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Banner arriba (usa tu imagen) -->
+  <header class="banner">
+   <picture>
+    <!-- Versión móvil -->
+    <source media="(max-width: 768px)" srcset="assets/banner-mobile/banner-m.jpg">
+    <!-- Versión desktop -->
+    <img src="assets/banner/banner.jpg" alt="Banner OGTIC">
+  </picture>
+</header>
+
+<!-- Cuadro explicativo ALFA (versión mejorada) -->
+<div class="info-box" role="region" aria-label="¿Qué es ALFA?">
+  <p>
+    <strong>¿Qué es OGTIC?</strong>
+    Esta plataforma de rescate animal conecta e integra a distintas instituciones,
+    permitiendo respuestas más rápidas, coordinadas y efectivas.
+  </p>
+</div>
+
+<div class="info-box" role="region" aria-label="¿Qué es ALFA?">
+  <p>
+    <strong>¿Qué es OGTIC?</strong>
+    Esta plataforma de rescate animal conecta e integra a distintas instituciones,
+    permitiendo respuestas más rápidas, coordinadas y efectivas.
+  </p>
+</div>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  /* Reseteos mínimos para evitar desbordes en iframes de Google Sites */
+  .info-box, .info-box * { box-sizing: border-box; }
+  .info-box { overflow: hidden; }         /* evita barras internas por sombras/bordes */
+  
+  .info-box {
+    --bg: #67aae4;
+    --fg: #fbfbfb;
+    --title: #ffffff;
+
+    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
+
+    /* padding y radios fluidos para móvil/desktop */
+    padding: clamp(16px, 4vw, 28px);
+    border-radius: clamp(12px, 2vw, 16px);
+
+    /* ancho seguro para móvil y desktop sin forzar alto del iframe */
+    width: min(92%, 720px);
+    margin: clamp(16px, 4vw, 32px) auto;
+
+    text-align: center;
+    line-height: 1.6;
+
+    /* sombra suave sin provocar overflow */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;  /* evita desbordes por palabras largas */
+  }
+
+  .info-box p {
+    margin: 0;
+    font-size: clamp(15px, 2.6vw, 18px);  /* tipografía fluida */
+  }
+
+  .info-box strong {
+    display: block;
+    margin-bottom: clamp(6px, 1.2vw, 10px);
+    font-weight: 600;
+    font-size: clamp(17px, 3vw, 20px);   /* título fluido */
+    color: var(--title);
+  }
+
+  /* Respeta accesibilidad: si el usuario prefiere menos movimiento, quita animaciones si luego agregas */
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+</style>
+
+  <!-- Zona blanca con botón centrado -->
+  <main class="hero-space">
+    <a href="#detalles" class="cta">Conoce más aquí</a>
+  </main>
+
+</body>
+</html>
+
