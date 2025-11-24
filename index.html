@@ -18,78 +18,111 @@
   </picture>
 </header>
 
-<!-- Cuadro explicativo ALFA (versión mejorada) -->
-<div class="info-box" role="region" aria-label="¿Qué es ALFA?">
+<!-- Cuadro explicativo (versión actualizada OGTIC) -->
+<div class="info-box" role="region" aria-label="¿Qué es la OGTIC?">
   <p>
-    <strong>¿Qué es la Oficina Gubernamental de Tecnologías de la Información y Comunicación (OGTIC)?</strong>
-  La OGTIC es una institución del Estado dominicano, adscrita al Ministerio de Administración Pública, encargada de dirigir y coordinar las acciones necesarias para impulsar la transformación digital del país. Su misión es promover el uso eficiente de las Tecnologías de la Información y Comunicación (TIC) dentro del sector público, con el fin de mejorar la calidad de los servicios gubernamentales, fortalecer la innovación, aumentar la conectividad y contribuir al desarrollo económico y social de la República Dominicana.
+    <strong>¿Qué es la OGTIC y para qué sirve?</strong>
+
+    La OGTIC es la institución que lidera la transformación digital del gobierno.  
+    Nos encargamos de que la tecnología se use de forma estratégica para mejorar la vida de la gente.
   </p>
+
+  <p>
+    <strong>¿Qué hacemos en concreto?</strong>
+  </p>
+
+  <ul class="bullets">
+    <li>Somos el motor de la transformación digital del gobierno.</li>
+    <li>Facilitamos que los servicios públicos lleguen más rápido, más cerca y de forma segura.</li>
+    <li>Diseñamos políticas y estrategias digitales para modernizar el Estado.</li>
+    <li>Acompañamos a las instituciones públicas en la implementación de tecnologías que hacen sus servicios más eficientes.</li>
+    <li>Promovemos la innovación, la conectividad y el acceso equitativo a la tecnología en todo el país.</li>
+    <li>Impulsamos iniciativas que acercan al ciudadano a un gobierno más ágil, transparente y eficiente.</li>
+  </ul>
+
+  <p class="closing-line">
+    Facilitamos que la tecnología trabaje para las personas, no al revés.
+  </p>
+
+  <a href="https://ogtic.gob.do/quienes-somos" target="_blank" class="cta-button">Conoce más aquí</a>
 </div>
 
-<div class="info-box" role="region" aria-label="¿Qué es ALFA?">
-  <p>
-    <strong>Funciones principales que desempeña la institución:</strong>
-   La OGTIC diseña y propone políticas, estrategias y planes para expandir el acceso y uso de las TIC en el sector público. Asesora a las instituciones gubernamentales en la planificación y ejecución de proyectos tecnológicos, fomenta la cooperación entre sectores público, privado y sociedad civil, y promueve investigaciones y transferencia de conocimiento en materia tecnológica. También difunde el uso de las TIC, impulsa la modernización del Estado mediante tecnologías interoperables y seguras, participa en proyectos tecnológicos públicos, vela por la seguridad y privacidad de la información, da seguimiento a la Agenda de Gobierno Electrónico y propone lineamientos e instructivos para optimizar la gestión y el aprovechamiento de los recursos tecnológicos del país.
-  </p>
-</div>
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-  /* Reseteos mínimos para evitar desbordes en iframes de Google Sites */
   .info-box, .info-box * { box-sizing: border-box; }
-  .info-box { overflow: hidden; }         /* evita barras internas por sombras/bordes */
-  
-  .info-box {
-    --bg: #67aae4;
-    --fg: #fbfbfb;
-    --title: #ffffff;
 
-    font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  .info-box {
+    --bg: #253159;
+    --fg: #ffffff;
+
+    font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: var(--fg);
-
-    /* padding y radios fluidos para móvil/desktop */
-    padding: clamp(16px, 4vw, 28px);
-    border-radius: clamp(12px, 2vw, 16px);
-
-    /* ancho seguro para móvil y desktop sin forzar alto del iframe */
-    width: min(92%, 720px);
+    padding: clamp(18px, 4vw, 32px);
+    border-radius: clamp(12px, 2vw, 18px);
+    width: min(92%, 760px);
     margin: clamp(16px, 4vw, 32px) auto;
-
-    text-align: center;
-    line-height: 1.6;
-
-    /* sombra suave sin provocar overflow */
-    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    word-wrap: break-word;
-    overflow-wrap: anywhere;  /* evita desbordes por palabras largas */
-  }
-
-  .info-box p {
-    margin: 0;
-    font-size: clamp(15px, 2.6vw, 18px);  /* tipografía fluida */
+    line-height: 1.65;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   }
 
   .info-box strong {
     display: block;
-    margin-bottom: clamp(6px, 1.2vw, 10px);
-    font-weight: 600;
-    font-size: clamp(17px, 3vw, 20px);   /* título fluido */
-    color: var(--title);
+    margin-bottom: 8px;
+    font-size: clamp(18px, 3vw, 22px);
+    color: #ffffff;
   }
 
-  /* Respeta accesibilidad: si el usuario prefiere menos movimiento, quita animaciones si luego agregas */
+  .info-box p {
+    font-size: clamp(15px, 2.2vw, 17px);
+    margin-bottom: 14px;
+  }
+
+  .bullets {
+    padding-left: 20px;
+    margin-bottom: 18px;
+  }
+
+  .bullets li {
+    margin-bottom: 6px;
+    font-size: clamp(15px, 2.3vw, 17px);
+  }
+
+  .closing-line {
+    font-size: clamp(16px, 2.5vw, 18px);
+    font-weight: 600;
+    margin-top: 12px;
+  }
+
+  /* Botón bonito */
+  .cta-button {
+    display: inline-block;
+    padding: 12px 26px;
+    margin-top: 12px;
+    background: #4CC9F0;
+    color: #0B1A33;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all .3s ease;
+    text-align: center;
+  }
+
+  .cta-button:hover {
+    background: #72d9ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+
   @media (prefers-reduced-motion: reduce) {
     * { transition: none !important; }
   }
 </style>
 
-  <!-- Zona blanca con botón centrado -->
-  <main class="hero-space">
-    <a href="#detalles" class="cta">Conoce más aquí</a>
-  </main>
 
 </body>
 </html>
